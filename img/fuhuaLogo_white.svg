@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="iteration_7_explanation" data-name="iteration 7 explanation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="106.82" y="26.36" width="26.82" height="60.35" rx="13.41" ry="13.41"/>
+  <path class="cls-1" d="M80,54.85v-15.08c0-7.41-6-13.41-13.41-13.41h-26.82c-7.41,0-13.41,6-13.41,13.41h0c0,7.41,6,13.41,13.41,13.41h0c7.41,0,13.41,6,13.41,13.41h0c0,7.41-6,13.41-13.41,13.41h0c-7.41,0-13.41,6-13.41,13.41v26.82c0,7.41,6,13.41,13.41,13.41h26.82c7.41,0,13.41-6,13.41-13.41V54.85Z"/>
+  <rect class="cls-1" x="106.82" y="101.94" width="26.82" height="31.71" rx="13.41" ry="13.41"/>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="draft">
+    <text class="cls-3" transform="translate(0 -2.39)"><tspan x="0" y="0">i</tspan><tspan class="cls-2" x="2.81" y="0">t</tspan><tspan x="6.71" y="0">e</tspan><tspan class="cls-4" x="12.72" y="0">r</tspan><tspan class="cls-1" x="16.58" y="0">a</tspan><tspan x="22.32" y="0">tion 7</tspan></text>
+  </g>
+  <g id="iteration_7" data-name="iteration 7">
+    <g>
+      <rect x="107.19" y="26.48" width="26.82" height="60.35" rx="13.41" ry="13.41"/>
+      <path d="M80.37,54.98v-15.08c0-7.41-6-13.41-13.41-13.41h-26.82c-7.41,0-13.41,6-13.41,13.41h0c0,7.41,6,13.41,13.41,13.41h0c7.41,0,13.41,6,13.41,13.41h0c0,7.41-6,13.41-13.41,13.41h0c-7.41,0-13.41,6-13.41,13.41v26.82c0,7.41,6,13.41,13.41,13.41h26.82c7.41,0,13.41-6,13.41-13.41V54.98Z"/>
+      <rect x="107.19" y="102.06" width="26.82" height="31.71" rx="13.41" ry="13.41"/>
+    </g>
+  </g>
+</svg>
