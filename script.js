@@ -139,6 +139,26 @@ if (lettersContainer && draggableLetters.length > 0) {
     }
 }
 
+const pupils = document.querySelectorAll(".pupil");
+
+document.addEventListener("mousemove", (e) => {
+    pupils.forEach((pupil) => {
+        const rect = pupil.getBoundingClientRect();
+        const pupilCenterX = rect.left + rect.width / 2;
+        const pupilCenterY = rect.top + rect.height / 2;
+
+        const angle = Math.atan2(e.clientY - pupilCenterY, e.clientX - pupilCenterX);
+
+        const maxMove = 20; // how far pupil can move inside the white of the eye
+
+        const x = Math.cos(angle) * maxMove;
+        const y = Math.sin(angle) * maxMove;
+
+        pupil.style.transform = `translate(${x}px, ${y}px)`;
+    });
+});
+
+
 // image cursor trail
 const hero = document.querySelector(".hero-section");
 const containerTrail = document.getElementById("trail-container");

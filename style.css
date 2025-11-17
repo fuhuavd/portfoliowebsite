@@ -299,7 +299,7 @@ nav .toggle-wrapper {
     height: 100vh;
     overflow: hidden;
 }
-    
+
 /* draggable letters first section */
 .draggableLetter {
     position: absolute;
@@ -341,6 +341,41 @@ nav .toggle-wrapper {
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;}
+
+.head-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1080px; /* match your head.png width */
+  margin: 50px auto;
+}
+
+.head {
+  width: 300%;
+  display: block;
+  z-index: 1;
+}
+
+/* Default pupil size */
+.pupil {
+  position: absolute;
+  width: 75px;      /* your pupil size */
+  height: 75px;
+  transition: transform 0.05s linear;
+  pointer-events: none;  /* avoid blocking cursor */
+  border-radius: 50%;
+}
+
+/* Position pupils inside the eye whites */
+.pupil-left {
+  top: 48%;   /* change for your image */
+  left: 24%;
+}
+
+.pupil-right {
+  top: 50%;
+  left: 65%;
+}
 
 /* ========== CONTACT PAGE ========== */
 .links-section {
@@ -580,12 +615,10 @@ transform: scale(0.95);
   min-width: 250px; /* prevent too small on small screens */
 }
 
-/* Project title stays above details */
 .project-title {
   margin-bottom: 20px;
 }
 
-/* Make the project-details horizontal */
 .project-details {
   display: flex;
   gap: 40px; /* spacing between detail blocks */
@@ -600,7 +633,6 @@ transform: scale(0.95);
   color: gray;
 }
 
-/* Right section styling */
 .project-desRight {
   flex: 1;
   min-width: 250px;
@@ -608,7 +640,6 @@ transform: scale(0.95);
   font-size: 0.8em;
 }
 
-/* Pictures centered */
 .project-pictures {
   display: flex;
   justify-content: center;
@@ -644,3 +675,4 @@ transform: scale(0.95);
     transform: translateY(0);
   }
 }
+
