@@ -139,6 +139,7 @@ if (lettersContainer && draggableLetters.length > 0) {
     }
 }
 
+// follow eyes https://darkcssweb.com/eyes-follow-mouse/hero-section
 const pupils = document.querySelectorAll(".pupil");
 
 document.addEventListener("mousemove", (e) => {
@@ -158,15 +159,14 @@ document.addEventListener("mousemove", (e) => {
     });
 });
 
-
 // image cursor trail
 const hero = document.querySelector(".hero-section");
-const containerTrail = document.getElementById("trail-container");
+const containerTrail = document.getElementById("trail-images");
 const images = [
-    "./img/trail1.png",
-    "./img/trail2.png",
-    "./img/trail3.png",
-    "./img/trail4.png"
+    "/img/sketch/sketch 1.svg",
+    "/img/sketch/sketch 3.svg",
+    "/img/sketch/sketch 4.svg",
+    "/img/sketch/sketch 2.svg",
 ];
 let imgIndex = 0;
 
@@ -199,10 +199,10 @@ function createTrailImage(x, y) {
 
     setTimeout(() => {
         img.style.opacity = 0;
-        img.style.transform = "translate(-50%, -50%) scale(0.5)";
+        img.style.transform = "translate(-50%, -50%) scale(3)";
     }, 10);
 
-    setTimeout(() => img.remove(), 500);
+    setTimeout(() => img.remove(), 2000);
 
     imgIndex = (imgIndex + 1) % images.length;
 }

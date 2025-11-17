@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #1b4cf8;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-3 {
+        fill: lime;
+      }
+
+      .cls-3, .cls-4 {
+        opacity: .2;
+      }
+
+      .cls-4 {
+        fill: #fbb03b;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        stroke: red;
+      }
+
+      .cls-7 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        opacity: .5;
+      }
+    </style>
+  </defs>
+  <g id="draft">
+    <text class="cls-7" transform="translate(0 -2.39)"><tspan x="0" y="0">i</tspan><tspan class="cls-6" x="2.81" y="0">t</tspan><tspan x="6.71" y="0">e</tspan><tspan class="cls-9" x="12.72" y="0">r</tspan><tspan class="cls-5" x="16.58" y="0">a</tspan><tspan x="22.32" y="0">tion 7 - </tspan><tspan class="cls-8" x="59.82" y="0">e</tspan><tspan x="65.79" y="0">xplan</tspan><tspan class="cls-5" x="93.45" y="0">a</tspan><tspan x="99.19" y="0">tion</tspan></text>
+  </g>
+  <g id="iteration_7_explanation" data-name="iteration 7 explanation">
+    <g>
+      <rect x="105.98" y="28.26" width="25.98" height="58.45" rx="12.99" ry="12.99"/>
+      <path d="M80,55.85v-14.61c0-7.17-5.82-12.99-12.99-12.99h-25.98c-7.17,0-12.99,5.82-12.99,12.99h0c0,7.17,5.82,12.99,12.99,12.99h0c7.17,0,12.99,5.82,12.99,12.99h0c0,7.17-5.82,12.99-12.99,12.99h0c-7.17,0-12.99,5.82-12.99,12.99v25.98c0,7.17,5.82,12.99,12.99,12.99h25.98c7.17,0,12.99-5.82,12.99-12.99v-63.33Z"/>
+      <rect x="105.98" y="101.46" width="25.98" height="30.71" rx="12.99" ry="12.99"/>
+    </g>
+    <g id="horizontale_lijn" data-name="horizontale lijn" class="cls-10">
+      <line class="cls-1" x1="157.94" y1="28.26" x2="2.06" y2="28.26"/>
+      <line class="cls-1" x1="157.94" y1="54.47" x2="2.06" y2="54.47"/>
+      <line class="cls-1" x1="157.94" y1="80.21" x2="2.06" y2="80.21"/>
+      <line class="cls-1" x1="157.94" y1="101.46" x2="2.06" y2="101.46"/>
+      <line class="cls-1" x1="157.94" y1="86.83" x2="2.06" y2="86.83"/>
+      <line class="cls-1" x1="157.94" y1="132.3" x2="2.06" y2="132.3"/>
+    </g>
+    <g id="verticale_lijn" data-name="verticale lijn" class="cls-10">
+      <line class="cls-2" x1="28.04" y1="1.73" x2="28.04" y2="158.27"/>
+      <line class="cls-2" x1="80" y1="1.73" x2="80" y2="158.27"/>
+      <line class="cls-2" x1="54.02" y1="1.73" x2="54.02" y2="158.27"/>
+      <line class="cls-2" x1="105.98" y1="1.73" x2="105.98" y2="158.27"/>
+      <line class="cls-2" x1="131.96" y1="1.73" x2="131.96" y2="158.27"/>
+    </g>
+    <rect class="cls-4" x="2.06" y="2.13" width="25.98" height="129.9"/>
+    <rect class="cls-3" x="131.96" y="2.18" width="25.98" height="130.57"/>
+    <rect class="cls-3" x="80" y="2.18" width="25.98" height="130.57"/>
+    <rect class="cls-4" x="28.04" y="-23.7" width="25.98" height="77.94" transform="translate(56.3 -25.77) rotate(90)"/>
+    <rect class="cls-3" x="111.59" y="55.12" width="14.75" height="77.94" transform="translate(213.05 -24.88) rotate(90)"/>
+    <rect class="cls-4" x="15.05" y="41.48" width="25.98" height="51.96" transform="translate(95.51 39.42) rotate(90)"/>
+  </g>
+</svg>
