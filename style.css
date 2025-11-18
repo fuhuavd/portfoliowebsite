@@ -15,10 +15,9 @@
 
   --toggle-color: #1a1a1a;
 
-  --blue: #3D64F1;
-  --hoverblue: rgb(214, 222, 250);
+  --red: red;
   --grey: #D8D8D8;
-  --black: #343231;
+  --black: #1a1a1a;
 
   color-scheme: light;
 }
@@ -50,7 +49,7 @@ html.dark {
 
 ::selection{
     background: var(--black);
-    color: white;
+    color: var(--red);
 }
 
 h1{
@@ -127,7 +126,7 @@ nav a {
   transition: opacity 0.3s ease;}
 nav a:hover {
   opacity: 0.6;
-  color: blue;}
+  color: var(--red);}
 nav .logo {
   flex: 1;
 }
@@ -154,6 +153,10 @@ nav .toggle-wrapper {
 .hamburger img {
   width: 32px;
   height: 32px;}
+
+.mobile-only {
+  display: none;
+}
 
   @media (max-width: 768px) {
     nav {
@@ -200,7 +203,10 @@ nav .toggle-wrapper {
 
     #closeHamburger{
         display: block;
-  }
+    }
+    .mobile-only {
+        display: block;
+    }
 }
 
 /* ========== light dark mode ========== */
@@ -303,6 +309,56 @@ nav .toggle-wrapper {
     overflow: hidden;
 }
 
+#lettersContainer-des {
+  text-align: center;
+  margin-top: 200px;
+  color: red;
+  display:block;
+}
+
+/* https://uiverse.io/SteveBloX/dangerous-warthog-85 */
+.cards {
+  margin: 80px 0 80px   30px;
+}
+.cards-all{
+  display: flex;
+  justify-content: center;
+  gap: 50PX;
+  margin-top: 50px;
+}
+.card {
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card img{
+  overflow: hidden;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
 /* draggable letters first section */
 .draggableLetter {
     position: absolute;
@@ -317,17 +373,10 @@ nav .toggle-wrapper {
     transform-origin: top left; /* helps when moving precisely */
 }
 
-@media (max-width: 768px) {
-    .draggableLetter {
-        font-size: 50px;
-        cursor: default; /* no dragging */
-    }
-}
-
 .hero-section {
   position: relative;
   width: 100vw;
-  height: 50vh;
+  height: 75vh;
   overflow: hidden; /* this keeps trail inside section */
   background-color: var(--text-color);}
 #trail-container {
@@ -343,7 +392,7 @@ nav .toggle-wrapper {
 }
 
 #trail-tekst {
-    color: white;
+    color: var(--background-color);
     text-align: center;
     font-size: 3rem;
     z-index: 10; /* make sure it stays above images if needed */
@@ -356,6 +405,31 @@ nav .toggle-wrapper {
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;}
+
+
+@media (max-width: 768px) {
+  .draggableLetter {
+      font-size: 50px;
+      cursor: default; /* no dragging */
+  }
+
+  #trail-tekst {
+  font-size: 1.5rem;
+  }
+
+  #lettersContainer-des {
+    display:none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  #trail-tekst {
+      font-size: 1rem;
+  }
+}
+
+/* ========== ABOUOT ME PAGE ========== */
 
 .head-container {
   position: relative;
@@ -371,7 +445,6 @@ nav .toggle-wrapper {
   z-index: 1;
 }
 
-/* Default pupil size */
 .pupil {
   position: absolute;
   width: 75px;     /* responsive size relative to head */
@@ -382,7 +455,6 @@ nav .toggle-wrapper {
   transition: transform 0.05s linear;
 }
 
-/* Position pupils inside the eye whites */
 .pupil-left {
   top: 48%;   /* change for your image */
   left: 28%;
@@ -413,7 +485,6 @@ nav .toggle-wrapper {
   }
 }
 
-/* MOBILE */
 @media (max-width: 480px) {
   .head {
     max-width: 350px;
@@ -446,7 +517,7 @@ nav .toggle-wrapper {
   flex-direction: column;
   gap: 20px;
   align-items: left;}
-/* Animated link styles */
+
 .animated-link {
   position: relative;
   display: inline-flex;
@@ -584,6 +655,7 @@ nav .toggle-wrapper {
 }
 .filter-btn {
   background-color: var(--button-bg);
+  color: var(--button-border);
   border: 2px solid var(--button-border);
   padding: 10px 20px;
   margin: 0 5px;
@@ -609,6 +681,7 @@ nav .toggle-wrapper {
 .filter-text p {
   color: grey;
   font-size: 0.8em;
+  padding-right: 20px;
 }
 #filter-links{margin: 0 0 0 30px;}
 
@@ -631,7 +704,7 @@ nav .toggle-wrapper {
   transition: transform 0.3s ease;
 }
 .portfolio-item:hover {
-color: blue;
+color: var(--red);
 transform: scale(0.95);
 }
 .portfolio-text {
@@ -665,6 +738,10 @@ transform: scale(0.95);
     padding: 10px;
     text-align: center;
   }
+
+  .filter-text {
+  width: 100%;
+}
 
   .portfolio-text {
     width: 100%;
