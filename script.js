@@ -270,3 +270,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     filterItems("all");
 });
+
+
+// Fade-in on scroll
+const fadeSections = document.querySelectorAll(
+    ".project-pictures, .project-des, .project-pictures2, .docu-btn-container"
+);
+
+// Add fade-in class to each
+fadeSections.forEach(section => section.classList.add("fade-in-section"));
+
+// Create observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in-visible");
+            observer.unobserve(entry.target); // animate only once
+        }
+    });
+}, { threshold: 0.2 });
+
+// Observe
+fadeSections.forEach(section => observer.observe(section));

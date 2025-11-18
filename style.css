@@ -314,40 +314,58 @@ nav .toggle-wrapper {
   margin-top: 200px;
   color: red;
   display:block;
+  opacity: 50%;
 }
 
 /* https://uiverse.io/SteveBloX/dangerous-warthog-85 */
 .cards {
-  margin: 80px 0 80px   30px;
+  margin: 80px 0 80px 30px;
 }
-.cards-all{
+.cards-all {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 50PX;
+  gap: 40px;
   margin-top: 50px;
 }
+
+.cards-all a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
 .card {
   box-sizing: border-box;
   width: 250px;
-  height: 250px;
-  background: rgba(217, 217, 217, 0.58);
+  height: 250px;            /* allow card to grow with content */
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
-  text-align: center;
+  
+  display: flex;
+  flex-direction: column;   /* stack image on top, text below */
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 20px;
   cursor: pointer;
   transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   user-select: none;
   font-weight: bolder;
   color: black;
+  text-align: center;
 }
 
-.card img{
-  overflow: hidden;
+.card img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 15px;    
+  object-fit: contain;
 }
 
 .card:hover {
@@ -358,6 +376,34 @@ nav .toggle-wrapper {
 .card:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
+
+@media (max-width: 768px) {
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .cards {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .cards-all {
+    gap: 20px;
+  }
+}
+
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    border: 1px solid white;
+  }
+}
+
 
 /* draggable letters first section */
 .draggableLetter {
@@ -394,7 +440,7 @@ nav .toggle-wrapper {
 #trail-tekst {
     color: var(--background-color);
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     z-index: 10; /* make sure it stays above images if needed */
 }
 .trail-image {
@@ -471,7 +517,7 @@ nav .toggle-wrapper {
   }
 
   .pupil {
-    width: 40px;
+    width: 35px;
   }
 
   .pupil-left {
@@ -491,7 +537,7 @@ nav .toggle-wrapper {
   }
 
   .pupil {
-    width: 35px;
+    width: 25px;
   }
 
   .pupil-left {
@@ -799,7 +845,6 @@ transform: scale(0.95);
   width: 50%;
 }
 
-/* Specific project images */
 .project-pictures img {
     width: 100%;         
     max-width: 800px;    
@@ -814,7 +859,7 @@ transform: scale(0.95);
     object-fit: contain; /* keep content visible */
     margin: 0 auto;      
 }
-/* Project pictures container */
+
 .project-pictures,
 .project-pictures2 {
     display: flex;
@@ -824,7 +869,6 @@ transform: scale(0.95);
     margin: 30px 0;     
 }
 
-/* Optional: smaller screens adjustments */
 @media (max-width: 768px) {
     .project-pictures2 img {
         max-width: 50%;  
@@ -845,6 +889,20 @@ transform: scale(0.95);
     transform: translateY(0);
   }
 }
+
+/* Fade-in base state */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+/* When visible */
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* project pages */
 .docu-btn {
